@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
+
+// Assignment No : 1
+
 class complex
 {
     float realp;
     float imagp;
+    
 public:
     complex()
     {
@@ -19,6 +23,7 @@ public:
     friend ostream &operator<<(ostream &,complex &);
 
 };
+
 complex::complex(float x,float y)
 {
     realp=x;
@@ -38,7 +43,8 @@ ostream &operator<<(ostream &dout ,complex &c)
     return dout;
 }
 
-//    function to add two complex no.
+//    function to add two complex no:
+
 complex complex::operator+(complex &c)
 {
     complex temp;
@@ -48,7 +54,9 @@ complex complex::operator+(complex &c)
 
     return temp;
 }
-//  function to multiply two complex no.
+
+//  function to multiply two complex no:
+
 complex complex::operator*(complex &c)
 {
     complex mul;
@@ -95,13 +103,4 @@ int main()
     cout<<"The multiplication is";
     cout<<c4;
     return 0;
-
-
 }
-
-
-
-
-
-
-
